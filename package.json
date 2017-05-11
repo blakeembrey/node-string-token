@@ -1,0 +1,48 @@
+{
+  "name": "string-token",
+  "version": "0.0.0",
+  "description": "Generate a random token of length and characters",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json --type-check",
+    "build": "rm -rf dist/ && tsc",
+    "specs": "jest --coverage",
+    "test": "npm run -s lint && npm run -s build && npm run -s specs",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/node-string-token.git"
+  },
+  "keywords": [
+    "string",
+    "random",
+    "token",
+    "chars",
+    "ascii"
+  ],
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/node-string-token/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/node-string-token",
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.18",
+    "jest": "^20.0.0",
+    "rimraf": "^2.5.4",
+    "tslint": "^5.0.0",
+    "tslint-config-standard": "^5.0.2",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {}
+}
