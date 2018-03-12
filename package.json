@@ -8,7 +8,7 @@
     "dist/"
   ],
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json --type-check",
+    "lint": "tslint \"src/**/*.ts\" --project tsconfig.json",
     "build": "rm -rf dist/ && tsc",
     "specs": "jest --coverage",
     "test": "npm run -s lint && npm run -s build && npm run -s specs",
@@ -36,12 +36,12 @@
   },
   "homepage": "https://github.com/blakeembrey/node-string-token",
   "devDependencies": {
-    "@types/jest": "^21.1.0",
-    "@types/node": "^8.0.0",
-    "jest": "^21.0.0",
+    "@types/jest": "^22.2.0",
+    "@types/node": "^9.4.7",
+    "jest": "^22.4.2",
     "rimraf": "^2.5.4",
     "tslint": "^5.0.0",
-    "tslint-config-standard": "^6.0.0",
+    "tslint-config-standard": "^7.0.0",
     "typescript": "^2.1.5"
   },
   "dependencies": {}
