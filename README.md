@@ -1,11 +1,9 @@
 # String Token
 
-
 [![NPM version](https://img.shields.io/npm/v/string-token.svg?style=flat)](https://npmjs.org/package/string-token)
 [![NPM downloads](https://img.shields.io/npm/dm/string-token.svg?style=flat)](https://npmjs.org/package/string-token)
 [![Build status](https://img.shields.io/travis/blakeembrey/node-string-token.svg?style=flat)](https://travis-ci.org/blakeembrey/node-string-token)
 [![Test coverage](https://img.shields.io/coveralls/blakeembrey/node-string-token.svg?style=flat)](https://coveralls.io/r/blakeembrey/node-string-token?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/node-string-token.svg)](https://greenkeeper.io/)
 
 > Generate a random token of length and characters.
 
