@@ -4,11 +4,11 @@ describe('string token', () => {
   it('should generate a token from alphanumeric chars', async () => {
     const token = await stringToken(32)
 
-    expect(token).toMatch(/^[a-zA-Z0-9]{32}$/)
+    expect(token).toMatch(/^[~_a-zA-Z0-9]{32}$/)
   })
 
   it('should be unique', async () => {
-    const unique = Object.create(null)
+    const unique = new Set<string>()
     const tokens: Promise<string>[] = []
 
     for (let i = 0; i < 10000; i++) {
@@ -17,8 +17,8 @@ describe('string token', () => {
 
     await Promise.all(tokens).then((tokens) => {
       for (const token of tokens) {
-        expect(unique[token]).not.toBe(true)
-        unique[token] = true
+        expect(unique.has(token)).not.toBe(true)
+        unique.add(token)
       }
     })
   })
